@@ -22,7 +22,7 @@ describe('Order.js', () => {
     });
 
     afterEach(() => {
-        getDate.mockReset();
+        jest.resetModules();
     });
 
     it('render empty', () => {
