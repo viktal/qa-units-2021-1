@@ -27,7 +27,7 @@ describe('Order.js', () => {
 
     it('render empty', () => {
         const wrapper = shallow(<Order/>);
-        expect(wrapper).toMatchSnapshot();
+        expect(wrapper).toEqual({});
     });
 
     it('render with data', () => {
@@ -37,7 +37,7 @@ describe('Order.js', () => {
 
     it('render without params', () => {
         const wrapper = shallow(<Order order={{}}/>);
-        expect(wrapper).toMatchSnapshot();
+        expect(wrapper).toEqual({});
     });
 
     it('render with data and items', () => {
