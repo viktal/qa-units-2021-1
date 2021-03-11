@@ -17,7 +17,6 @@ configure({adapter: new Adapter()});
 describe('Order.js', () => {
 
     beforeEach(() => {
-        getDate.mockClear();
         getDate.mockReturnValue(fakeDate);
     });
 
